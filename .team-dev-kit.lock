@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0",
+  "marketplace": "aRaikoFunakami/team-dev-kit",
+  "framework": {
+    ".githooks/pre-commit": {
+      "sha": "ef1e9edc3277dc5c937421cf8fb48057dc84acfb24ca1ea75907776b69114538"
+    },
+    ".team-dev-kit/base.gitleaks.toml": {
+      "sha": "890512b2a8499968afb6e47663ed279508030c5bbe22729a87946bc7374e6541"
+    },
+    ".team-dev-kit/contract.md": {
+      "sha": "d108dc3db3e223d32a078de9c00ce8b6c2721ca2d93abf685ed2784953331828"
+    }
+  },
+  "config": [
+    ".github/ISSUE_TEMPLATE/bug.md",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/docs.md",
+    ".github/ISSUE_TEMPLATE/feature.md",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".gitleaks.toml",
+    "AGENTS.md"
+  ]
+}
