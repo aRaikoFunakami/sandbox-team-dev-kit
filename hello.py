@@ -1,15 +1,19 @@
 """hello.py — 起動時に挨拶を表示するサンプル。
 
 引数で名前を渡すとその名前で挨拶する。空文字・空白のみは拒否する。
+接頭辞は greeting_config の loader 経由で設定ファイルから取得する。
 """
 
 import sys
+
+from greeting_config import load_prefix
 
 
 def greet(name: str = "team-dev-kit") -> str:
     if not name.strip():
         raise ValueError("name must not be empty")
-    return f"hello, {name}"
+    prefix = load_prefix()
+    return f"{prefix}, {name}"
 
 
 def main() -> None:
