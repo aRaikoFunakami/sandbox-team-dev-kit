@@ -16,6 +16,7 @@ def main() -> None:
     name = sys.argv[1] if len(sys.argv) > 1 else "team-dev-kit"
     try:
         print(greet(name))
+        print("-- team-dev-kit")
     except ValueError as e:
         print(f"error: {e}", file=sys.stderr)
         sys.exit(1)
